@@ -36,10 +36,8 @@ public class UserDaoImpl implements UserDao {
         query.setString(1, user.getPwd());
         it = query.iterate();
         if (it.hasNext()) {
-            System.out.println("true");
             return true;
         } else {
-            System.out.println("false");
             return false;
         }
     }
