@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.model.UserInfoEntity" table="user_info" schema="localdb">
+        <id name="id" column="id"/>
+        <property name="createdBy" column="created_by"/>
+        <property name="createdDate" column="created_date"/>
+        <property name="lastModifiedBy" column="last_modified_by"/>
+        <property name="lastModifiedDate" column="last_modified_date"/>
+        <property name="version" column="version"/>
+        <property name="age" column="age"/>
+        <property name="name" column="name"/>
+        <property name="no" column="no"/>
+        <property name="pwd" column="pwd"/>
+    </class>
+</hibernate-mapping>
